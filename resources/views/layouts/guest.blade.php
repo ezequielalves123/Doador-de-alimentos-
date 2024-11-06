@@ -1,15 +1,15 @@
 <div class="fundo">
   <style>
   .fundo {
-    background-color: black;
-    color: gold;
+    background-color:  #f8ecd4;
+    color: Black;
     /* Cor dourada para todos os textos dentro de .fundo */
   }
 
   .fundo a,
   .fundo label,
   .fundo span {
-    color: gold;
+    color: Black;
     /* Cor dourada para links, labels e spans dentro de .fundo */
   }
 
@@ -19,6 +19,10 @@
     color: black;
     /* Cor dourada para inputs de texto, senha e email dentro de .fundo */
   }
+  .logo {
+    height: 80px; /* Define a altura desejada */
+    width: auto; /* Ajusta a largura proporcionalmente */
+}
   </style>
 
   <!DOCTYPE html>
@@ -45,7 +49,7 @@
     <div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-black-100 black:bg-black-900">
       <div>
         <a href="/">
-          <img src="images/logo3.jpg" alt="">
+          <img src="images/cesta.png" alt=""class="logo">
         </a>
       </div>
 

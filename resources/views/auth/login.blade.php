@@ -1,6 +1,6 @@
 <style>
 .fundo {
-  background-color: black;
+  background-color: #f8ecd4;
   color: gold;
   /* Cor dourada para todos os textos dentro de .fundo */
 }

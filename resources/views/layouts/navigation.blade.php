@@ -1,27 +1,34 @@
 <style>
-.fundo {
-  background-color: black;
-  color: gold;
-  /* Cor dourada para todos os textos dentro de .fundo */
-}
+  .fundo {
+    background-color: #f8ecd4;
+    color: black;
+    /* Cor dourada para todos os textos dentro de .fundo */
+  }
 
-.fundo a,
-.fundo label,
-.fundo span {
-  color: gold;
-  /* Cor dourada para links, labels e spans dentro de .fundo */
-}
+  .fundo a,
+  .fundo label,
+  .fundo span {
+    color: black;
+    /* Cor dourada para links, labels e spans dentro de .fundo */
+  }
 
-.fundo input[type="text"],
-.fundo input[type="password"],
-.fundo input[type="email"] {
-  color: gold;
-  /* Cor dourada para inputs de texto, senha e email dentro de .fundo */
-}
+  .fundo input[type="text"],
+  .fundo input[type="password"],
+  .fundo input[type="email"] {
+    color: black;
+    /* Cor dourada para inputs de texto, senha e email dentro de .fundo */
+  }
+
+  .logo {
+    width: 50px;
+    /* Define a largura desejada */
+    height: auto;
+    /* Mantém a proporção da altura */
+  }
 </style>
 <link rel="icon" href="images/icon.png" type="image/png">
 <div class="fundo">
-  <nav x-data="{ open: false }" class="bg-black dark:bg-gray-800 border-b border-gray-100 dark:border-gray-700">
+  <nav x-data="{ open: false }" class="bg-[#f8ecd4] dark:bg-gray-800 border-b border-gray-100 dark:border-gray-700">
     <!-- Primary Navigation Menu -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between h-16">
@@ -29,7 +36,7 @@
           <!-- Logo -->
           <div class="shrink-0 flex items-center">
             <a href="{{ route('dashboard') }}">
-              <img src="images/logo3.jpg" alt="">
+              <img src="images/cesta.png" alt="" class="logo">
 
             </a>
           </div>
@@ -37,8 +44,13 @@
           <!-- Navigation Links -->
           <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
             <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
-              {{ __('RH Soluções Contábeis') }}
+              {{ __('DOADOR DE ALIMENTOS COMUNITÁRIO') }}
             </x-nav-link>
+            <x-responsive-nav-link :href="route('pagina_inicial')" :active="request()->routeIs('pagina_inicial')">
+              {{ __('Cadastrar Produto') }}
+            </x-responsive-nav-link>
+
+
           </div>
         </div>
 
